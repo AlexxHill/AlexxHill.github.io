@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
 
-<title>Le Bruh</title>
+<title>PHP-Proxy</title>
 
 <meta name="generator" content="php-proxy.com">
 <meta name="version" content="<?=$version;?>">
@@ -48,8 +49,10 @@ html body {
 
 
 <div id="container">
-    <div style="text-align:center;">
-		<h1 style="color:blue;">Alex's Unblocker</h1>
+
+	<div style="text-align:center;">
+		<h1 style="color:blue;">PHP-Proxy</h1>
+	</div>
 	
 	<?php if(isset($error_msg)){ ?>
 	
@@ -64,7 +67,7 @@ html body {
 	<!-- I wouldn't touch this part -->
 	
 		<form action="index.php" method="post" style="margin-bottom:0;">
-			<input name="url" type="text" style="width:400px;" autocomplete="off" placeholder="Enter your URL here" />
+			<input name="url" type="text" style="width:400px;" autocomplete="off" placeholder="http://" />
 			<input type="submit" value="Go" />
 		</form>
 		
@@ -79,7 +82,7 @@ html body {
 </div>
 
 <div id="footer">
-	Powered by Alex's Unblocker <?php echo $version; ?>
+	Powered by <a href="//www.php-proxy.com/" target="_blank">PHP-Proxy</a> <?php echo $version; ?>
 </div>
 
 
